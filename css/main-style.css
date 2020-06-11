@@ -2,27 +2,12 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  background: linear-gradient(to bottom, rgba(70, 52, 78, 0.5) 0, rgba(70, 52, 78, 0.5) 100%), url("../images/splash_bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100vh;
-  text-align: center;
-  overflow: hidden;
-}
-
 h1, h2, h3 {
-  font-family: 'Lato', sans-serif;
   line-height: 1.2;
 }
 
 p {
-  font-family: 'Roboto Slab', serif;
   display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
   color: #fff;
 }
 
@@ -36,20 +21,18 @@ a {
   padding: 20px 32px;
 }
 
-.navbar {
-  background: rgba(255,255,255,0);
-}
-
 .navbar-brand {
   font-size: 22px;
-  color: #fff;
   margin-left: 10px;
+  color: #008489; 
+}
+.navbar-brand:hover {
+  color: #fff;
 }
 
 .navbar-nav a {
   font-size: 20px;
   line-height: 1.375;
-  color: #fff;
 }
 
 .site-name .nav-item a {
@@ -69,19 +52,233 @@ a {
   padding: 20px;
   color: #fff;
 }
+.navbar-expand-xl .navbar-nav .nav-link:hover {
+  color: #008489;
+}
+
 
 .navbar-light .navbar-nav .nav-link {
   color: #000;
 }
 
 /* Splash */
-.splash {
+.splash-page {
+  background: linear-gradient(to right, rgb(0, 0, 0), rgb(87, 87, 76));
+  background-image: url("../images/bg-masthead.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   width: 100%;
   height: 100vh;
   overflow: hidden;
+}
+
+.home-splash {
+  margin-left: 5%;
+}
+
+.splash h1 {
+  font-size: 3.5rem;
+  margin-top: 25%;
   color: #fff;
 }
 
-.splash-greeting {
+.splash p {
+  font-size: 2rem;
+}
+
+.splash-greeting, .navbar-brand {
   font-family: 'Permanent Marker', cursive;
 }
+
+.greeting-img {
+  width: 80%;
+  opacity: 0.9;
+  padding: 20px;
+}
+
+.btn-info {
+  background: #008489;
+}
+
+.btn-info:hover {
+  background: rgb(37, 44, 104);
+}
+
+/* About Me */
+.about-me {
+  background: #008489;
+  padding: 8rem 0;
+  text-align: center;
+  width: 100%;
+  background-image: url("../images/about-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.this-guy {
+  margin-top: -5px;
+  width: 15%;
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+.guy {
+  font-family: 'Permanent Marker', cursive;
+}
+
+.about-p {
+  font-family: 'Comic Neue', cursive;
+  font-size: 20px;
+}
+
+.justify-content-center {
+  padding-top: 5%;
+}
+
+/* Portfolio Section */
+.portfolio {
+  position: relative;
+  padding: 5%;
+  background: #fff;
+  color: #000;
+  background-image: url("../images/port-bg.jpg") ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.section-gap-bottom-90 {
+  padding-bottom: 1%;
+}
+
+.section-gap-top {
+  padding-top: 5%;
+}
+
+.port-words {
+  padding-bottom: 20px;
+}
+
+.mb-80 {
+  margin-bottom: 80px;
+}
+
+.portfolio-me .section-title {
+  margin-bottom: 0;
+}
+
+.section-title h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 70px;
+  text-transform: capitalize;
+  position: relative;
+  line-height: 44px;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.section-title h2:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -35px;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 7px;
+}
+
+.section-title h2:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -31px;
+  width: 100px;
+  height: 2px;
+  background: #fff;
+}
+
+.section-title p {
+  max-width: 535px;
+  margin-top: -20px;
+  margin-bottom: 0;
+  color: #000;
+  font-family: 'Comic Neue', cursive;
+}
+
+/* Images */
+.portfolio-me .filters-content img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+.card {
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.card h5 {
+  font-size: 21px;
+  color: #fff;
+}
+
+.card p {
+  font-size: 15px;
+  color: #fff;
+}
+
+/* Portfolio shape style */
+.portfolio::before, .portfolio::after {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 100px;
+  background-color: #4e4e4ea1;
+  bottom: -17px;
+  z-index: 1
+}
+
+.portfolio::before {
+  right: 50%;
+  transform: skew(0, 20deg);
+}
+
+.portfolio::after {
+  left: 50%;
+  transform: skew(0, -20deg);
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 600px) {
+
+  .splash h1 {
+    font-size: 2.3rem;
+    margin-top: 15%;
+  }
+    
+  .splash p {
+    font-size: 1.5rem;
+  }
+
+  .about-me {
+    margin-top: -50%;
+  }
+
+  .this-guy {
+    margin-top: -20%;
+  }
+} 
