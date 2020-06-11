@@ -241,17 +241,6 @@ img {
   color: #fff;
 }
 
-/* Portfolio shape style */
-.portfolio::before, .portfolio::after {
-  position: absolute;
-  content: "";
-  width: 100px;
-  height: 100px;
-  background-color: #4e4e4ea1;
-  bottom: -17px;
-  z-index: 1
-}
-
 .portfolio::before {
   right: 50%;
   transform: skew(0, 20deg);
@@ -261,6 +250,68 @@ img {
   left: 50%;
   transform: skew(0, -20deg);
 }
+
+/*-------------------------------------------
+# Call to Action Section
+--------------------------------------------*/
+.call-to-action {
+  padding: 8rem 0;
+  -webkit-clip-path: polygon(100% 0, 100% 61%, 53% 79%, 0 100%, 0 0);
+  clip-path: polygon(100% 0, 100% 61%, 53% 79%, 0 100%, 0 0);
+  background-color: #46344e;
+  color: #fff;
+  margin-bottom: -10vw;
+}
+
+/*-------------------------------------------
+/# Call to Action Section
+--------------------------------------------*/
+/*-------------------------------------------
+# Contact Section
+--------------------------------------------*/
+.contact-section {
+  background: linear-gradient(to bottom, rgba(70, 52, 78, 0.5) 0, rgba(70, 52, 78, 0.5) 100%), url("../img/contact_me_bg.jpg");
+  padding: 8rem 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-hr {
+  max-width: 9rem;
+  border-width: .2rem;
+  border-color: #ffc107;
+}
+
+.contact-section fas {
+  color: #fff;
+}
+
+.contact-section a {
+  color: #ffc107;
+}
+
+.contact-section, h1, p {
+  color: #fff;
+}
+
+/*-------------------------------------------
+/# Contact Section
+--------------------------------------------*/
+/*-------------------------------------------
+# Footer Section
+--------------------------------------------*/
+footer {
+  text-align: center;
+  width: 100%;
+  height: 40px;
+  background-color: #000;
+  color: #fff;
+}
+
+/*-------------------------------------------
+/# Footer Section
+--------------------------------------------*/
 
 /* MEDIA QUERIES */
 @media only screen and (max-width: 600px) {
